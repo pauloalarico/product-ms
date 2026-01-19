@@ -39,4 +39,11 @@ public class ProductService {
         return repository.findByUid(UUID.fromString(id))
                 .orElseThrow(() -> new RuntimeException("Product Id invalid or do not exist!"));
     }
+
+    @Transactional
+    public Product resetStockByQuantity(String id, Integer quantity) {
+        var product = findProductById(id);
+        repository.reset(UUID.fromString(id), quantity);
+        return product;
+    }
 }

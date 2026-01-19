@@ -18,7 +18,7 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<ProductDTO> getProduct (@PathVariable String id) {
+    public ResponseEntity<ProductDTO> getProduct(@PathVariable String id) {
         var product = productService.getProductById(id);
         return ResponseEntity.ok(new ProductDTO(product));
     }
@@ -35,5 +35,12 @@ public class ProductController {
         var product = productService.decreaseStockQuantity(id, dto.stockQuantity());
         var productDto = new ProductDTO(product);
         return ResponseEntity.ok(new CompleteRequestProductDto(productDto));
-     }
+    }
+
+    @PutMapping("/{id}/reset-stock/{quantity}")
+    public ResponseEntity<CompleteRequestProductDto> resetStock(@PathVariable String id, @PathVariable Integer quantity) {
+        var product = productService.resetStockByQuantity(id, quantity);
+        var productDto = new ProductDTO(product);
+        return ResponseEntity.ok(new CompleteRequestProductDto(productDto));
+    }
 }

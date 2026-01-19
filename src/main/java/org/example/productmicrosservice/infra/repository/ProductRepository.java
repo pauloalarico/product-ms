@@ -21,4 +21,13 @@ public interface ProductRepository extends JpaRepository<Product, UUID> {
            and p.stockQuantity >= :quantity
            \s""")
     void updateStockByQuantity(@Param("id") UUID id, @Param("quantity") Integer quantity);
+
+    @Modifying
+    @Query("""
+           update Product p
+           set p.stockQuantity = p.stockQuantity + :quantity
+           where p.productId = :id
+           \s""")
+    void reset(@Param("id") UUID id, @Param("quantity") Integer quantity);
+
 }
