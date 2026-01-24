@@ -1,10 +1,10 @@
-package org.example.productmicrosservice.entitie;
+package org.example.productmicrosservice.domain.entitie;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Positive;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import org.example.productmicrosservice.dto.request.RegisterProductDto;
+import org.example.productmicrosservice.appllication.dto.request.RegisterProductDto;
 
 import java.math.BigDecimal;
 import java.util.UUID;

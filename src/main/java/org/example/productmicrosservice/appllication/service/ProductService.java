@@ -1,9 +1,9 @@
-package org.example.productmicrosservice.service;
+package org.example.productmicrosservice.appllication.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.example.productmicrosservice.dto.request.RegisterProductDto;
-import org.example.productmicrosservice.entitie.Product;
+import org.example.productmicrosservice.appllication.dto.request.RegisterProductDto;
+import org.example.productmicrosservice.domain.entitie.Product;
 import org.example.productmicrosservice.infra.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 

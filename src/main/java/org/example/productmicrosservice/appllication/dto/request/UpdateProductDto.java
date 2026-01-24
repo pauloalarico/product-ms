@@ -1,4 +1,4 @@
-package org.example.productmicrosservice.dto.request;
+package org.example.productmicrosservice.appllication.dto.request;
 
 import jakarta.validation.constraints.NotNull;
 

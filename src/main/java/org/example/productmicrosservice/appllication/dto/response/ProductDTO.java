@@ -1,6 +1,6 @@
-package org.example.productmicrosservice.dto.response;
+package org.example.productmicrosservice.appllication.dto.response;
 
-import org.example.productmicrosservice.entitie.Product;
+import org.example.productmicrosservice.domain.entitie.Product;
 
 import java.math.BigDecimal;
 

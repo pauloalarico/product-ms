@@ -1,12 +1,12 @@
-package org.example.productmicrosservice.controller;
+package org.example.productmicrosservice.presentation.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.example.productmicrosservice.dto.request.RegisterProductDto;
-import org.example.productmicrosservice.dto.request.UpdateProductDto;
-import org.example.productmicrosservice.dto.response.CompleteRequestProductDto;
-import org.example.productmicrosservice.dto.response.ProductDTO;
-import org.example.productmicrosservice.service.ProductService;
+import org.example.productmicrosservice.appllication.dto.request.RegisterProductDto;
+import org.example.productmicrosservice.appllication.dto.request.UpdateProductDto;
+import org.example.productmicrosservice.appllication.dto.response.CompleteRequestProductDto;
+import org.example.productmicrosservice.appllication.dto.response.ProductDTO;
+import org.example.productmicrosservice.appllication.service.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
