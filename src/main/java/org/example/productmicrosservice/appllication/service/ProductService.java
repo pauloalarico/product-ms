@@ -35,7 +35,7 @@ public class ProductService {
         return product;
     }
 
-    private Product findProductById(String id) {
+    public Product findProductById(String id) {
         return repository.findByUid(UUID.fromString(id))
                 .orElseThrow(() -> new RuntimeException("Product Id invalid or do not exist!"));
     }
