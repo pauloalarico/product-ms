@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class ProductController {
 
-    private final ProductService productService;
+   /* private final ProductService productService;
 
     @GetMapping("/{id}")
     public ResponseEntity<ProductDTO> getProduct(@PathVariable String id) {
@@ -42,5 +42,5 @@ public class ProductController {
         var product = productService.resetStockByQuantity(id, quantity);
         var productDto = new ProductDTO(product);
         return ResponseEntity.ok(new CompleteRequestProductDto(productDto));
-    }
+    }*/
 }
