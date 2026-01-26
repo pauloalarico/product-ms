@@ -1,4 +1,4 @@
-package org.example.productmicrosservice.configuration;
+package org.example.productmicrosservice.infra.messaging.configuration;
 
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
