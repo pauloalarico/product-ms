@@ -42,5 +42,5 @@ public class ProductController {
         var product = productService.resetStockByQuantity(id, quantity);
         var productDto = new ProductDTO(product);
         return ResponseEntity.ok(new CompleteRequestProductDto(productDto));
-    }*/
+    }
 }
