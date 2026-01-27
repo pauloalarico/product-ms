@@ -19,7 +19,7 @@ public interface ProductRepository extends JpaRepository<Product, UUID> {
            set p.stockQuantity = p.stockQuantity - :quantity
            where p.productId = :id
            and p.stockQuantity >= :quantity
-           \s""")
+           """)
     void updateStockByQuantity(@Param("id") UUID id, @Param("quantity") Integer quantity);
 
     @Modifying

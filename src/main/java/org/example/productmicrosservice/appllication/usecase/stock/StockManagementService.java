@@ -1,5 +1,6 @@
 package org.example.productmicrosservice.appllication.usecase.stock;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.example.productmicrosservice.appllication.dto.command.GetProductAndDecreaseStock;
 import org.example.productmicrosservice.appllication.dto.result.ResultDecreaseStock;
@@ -10,6 +11,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class StockManagementService implements StockManagementUseCase {
 
     private final ProductRepository repository;
