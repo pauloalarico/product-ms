@@ -1,6 +1,6 @@
 package org.example.productmicrosservice.appllication.dto.command;
 
-import org.example.productmicrosservice.appllication.dto.order.OrderIdDto;
+import org.example.productmicrosservice.appllication.dto.shared.OrderIdDto;
 
 public record GetProductAndDecreaseStock(
         String correlationId,

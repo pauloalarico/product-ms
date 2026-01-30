@@ -1,4 +1,4 @@
-package org.example.productmicrosservice.appllication.dto.response;
+package org.example.productmicrosservice.appllication.dto.shared;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 

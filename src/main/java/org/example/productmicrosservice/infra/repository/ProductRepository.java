@@ -1,6 +1,6 @@
 package org.example.productmicrosservice.infra.repository;
 
-import org.example.productmicrosservice.domain.entitie.Product;
+import org.example.productmicrosservice.model.entitie.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

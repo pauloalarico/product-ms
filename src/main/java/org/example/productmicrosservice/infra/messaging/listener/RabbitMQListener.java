@@ -2,7 +2,7 @@ package org.example.productmicrosservice.infra.messaging.listener;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.productmicrosservice.appllication.dto.order.OrderIdDto;
+import org.example.productmicrosservice.appllication.dto.shared.OrderIdDto;
 import org.example.productmicrosservice.appllication.usecase.publisher.EventPublisherUseCase;
 import org.example.productmicrosservice.appllication.usecase.stock.DecreaseStockOrderCanceledUseCase;
 import org.example.productmicrosservice.appllication.usecase.stock.StockManagementUseCase;
