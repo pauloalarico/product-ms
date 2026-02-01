@@ -17,7 +17,7 @@ public class StockManagementService implements StockManagementUseCase {
     private final ProductRepository repository;
 
     @Override
-    public ResultDecreaseStock execute(GetProductAndDecreaseStock command) {
+    public ResultDecreaseStock execute(final GetProductAndDecreaseStock command) {
         var product = repository.findByUid(UUID.fromString(command.id()))
                 .orElseThrow(() -> new RuntimeException("Product Id invalid or do not exist!"));
         if(command.quantity() > product.getStockQuantity()) {

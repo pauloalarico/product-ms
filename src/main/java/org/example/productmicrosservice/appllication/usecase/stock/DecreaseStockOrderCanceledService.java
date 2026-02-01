@@ -14,7 +14,7 @@ public class DecreaseStockOrderCanceledService implements DecreaseStockOrderCanc
     private final ProductRepository repository;
 
     @Override
-    public void execute(GetProductAndDecreaseStock command) {
+    public void execute(final GetProductAndDecreaseStock command) {
         var product = repository.findByUid(UUID.fromString(command.id()))
                 .orElseThrow(() -> new RuntimeException("Product Id invalid or do not exist!"));
         if(command.quantity() > product.getStockQuantity()) {

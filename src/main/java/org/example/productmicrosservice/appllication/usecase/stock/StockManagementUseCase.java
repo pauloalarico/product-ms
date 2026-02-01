@@ -4,5 +4,5 @@ import org.example.productmicrosservice.appllication.dto.command.GetProductAndDe
 import org.example.productmicrosservice.appllication.dto.result.ResultDecreaseStock;
 
 public interface StockManagementUseCase {
-    ResultDecreaseStock execute(GetProductAndDecreaseStock command);
+    ResultDecreaseStock execute(final GetProductAndDecreaseStock command);
 }
