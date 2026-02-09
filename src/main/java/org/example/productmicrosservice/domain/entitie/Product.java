@@ -1,4 +1,4 @@
-package org.example.productmicrosservice.model.entitie;
+package org.example.productmicrosservice.domain.entitie;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Positive;

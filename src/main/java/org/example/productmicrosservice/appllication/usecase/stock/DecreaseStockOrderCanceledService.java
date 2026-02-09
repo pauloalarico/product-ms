@@ -3,7 +3,7 @@ package org.example.productmicrosservice.appllication.usecase.stock;
 import lombok.RequiredArgsConstructor;
 import org.example.productmicrosservice.appllication.dto.command.GetProductAndDecreaseStock;
 import org.example.productmicrosservice.infra.repository.ProductRepository;
-import org.example.productmicrosservice.model.exception.ProductNotFound;
+import org.example.productmicrosservice.domain.exception.ProductNotFound;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;

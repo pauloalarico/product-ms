@@ -1,6 +1,6 @@
 package org.example.productmicrosservice.appllication.dto.shared;
 
-import org.example.productmicrosservice.model.entitie.Product;
+import org.example.productmicrosservice.domain.entitie.Product;
 
 import java.math.BigDecimal;
 
