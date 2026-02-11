@@ -6,8 +6,6 @@ import org.example.productmicrosservice.domain.entitie.Product;
 import org.example.productmicrosservice.infra.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
-
 @Service
 @RequiredArgsConstructor
 public class ProductService {
@@ -17,11 +15,5 @@ public class ProductService {
     public Product registerNewProduct(RegisterProductDto dto) {
         var product = new Product(dto);
         return repository.save(product);
-    }
-
-
-    public Product findProductById(String id) {
-        return repository.findByUid(UUID.fromString(id))
-                .orElseThrow(() -> new RuntimeException("Product Id invalid or do not exist!"));
     }
 }
