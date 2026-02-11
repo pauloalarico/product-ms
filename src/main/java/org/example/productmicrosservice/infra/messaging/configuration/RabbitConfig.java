@@ -38,21 +38,4 @@ public class RabbitConfig {
         factory.setMessageConverter(messageConverter());
         return factory;
     }
-
-    @Bean
-    public Queue createProductDecreased() {
-        return new Queue("products-decreased.queue", false);
-    }
-
-    @Bean
-    public FanoutExchange fanoutExchange() {
-        return new FanoutExchange("products-decreased.ex");
-    }
-
-    @Bean
-    public Binding createBindingProductDecreased() {
-        return BindingBuilder.bind(createProductDecreased()).to(fanoutExchange());
-    }
-
-
 }
